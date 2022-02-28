@@ -1,6 +1,6 @@
 const player = document.getElementById("player0")
 const scoreboard = document.getElementById("scoreboard")
-var x = 0, y = 0
+var x = 350, y = 350
 var controlLeft = 37, controlUp = 38, controlRight = 39, controlDown = 40
 var playerMoveUnit = 20
 const move = (key)=>{
@@ -22,3 +22,5 @@ const move = (key)=>{
     player.style.top = (y + "px")
   }
 }
+player.style.left = x + "px"
+player.style.top = y + "px"
