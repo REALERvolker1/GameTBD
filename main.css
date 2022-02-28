@@ -21,13 +21,15 @@ main{
   height:var(--tile);width:var(--tile);display:block;position:absolute;
 }
 .p{
-  background-color:white;border:3px solid gray;z-index:5;
+  background-color:white;
+}
+.p::after{
+  content:'';position:absolute;top:0px;bottom:0px;left:0px;right:0px;background:#0000;border:4px solid var(--blue);
 }
 .enemy{
   background-color:var(--red);border:3px solid gray;z-index:3;
 }
-/*
-#debug{
+/*#debug{
   position:absolute;top:20px;left:20px;right:20px;background:white;color:blue;
   box-sizing:border-box;padding:20px;min-height:100px;display:flex;flex-flow:row wrap;
   z-index:1000;
@@ -37,8 +39,14 @@ main{
   display:block;position:relative;width:var(--tile);height:var(--tile);z-index:1;box-sizing:border-box;
 }
 .tile0{
-  background-color:green;
+  background:url(assets/textures/grass_carried.png) no-repeat;
+  background-size:cover;
 }
 .tile1{
-  background-color:gray;
+  background:url(assets/textures/netherite_block.png) no-repeat;
+  background-size:cover;
+}
+.tile2{
+  background:url(assets/textures/polished_blackstone.png) no-repeat;
+  background-size:cover;
 }
