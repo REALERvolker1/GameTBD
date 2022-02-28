@@ -1,0 +1,22 @@
+:root{
+  --red:#FF1a08;
+  --blue:#0e20FF;
+  background:black;
+  color:white;
+}
+main{
+  width:800px;height:800px;position:fixed;display:block;top:5px;left:5px;
+  border:2px solid white;background-color:black;}
+.rightPane{
+  float:right;background:white;width:200px;height:100%;color:black;
+  text-align:center;
+}
+.tile{
+  height:100px;width:100px;display:block;position:absolute;box-sizing:border-box;
+}
+.player{
+  background-color:white;border:3px solid gray;
+}
+.enemy{
+  background-color:var(--red);border:3px solid gray;
+}

@@ -1,22 +1,44 @@
 :root{
   --red:#FF1a08;
   --blue:#0e20FF;
+  --tile:50px;
   background:black;
   color:white;
 }
+/* Map: z index 1
+Entity: z index 2
+Character: z index 3
+Player: z index 5
+*/
 main{
-  width:800px;height:800px;position:fixed;display:block;top:5px;left:5px;
-  border:2px solid white;background-color:black;}
+  width:800px;height:800px;position:fixed;display:flex;top:5px;left:5px;
+  border:2px solid white;background-color:black;flex-flow:row wrap;}
 .rightPane{
   float:right;background:white;width:200px;height:100%;color:black;
   text-align:center;
 }
 .tile{
-  height:100px;width:100px;display:block;position:absolute;box-sizing:border-box;
+  height:var(--tile);width:var(--tile);display:block;position:absolute;
 }
-.player{
-  background-color:white;border:3px solid gray;
+.p{
+  background-color:white;border:3px solid gray;z-index:5;
 }
 .enemy{
-  background-color:var(--red);border:3px solid gray;
+  background-color:var(--red);border:3px solid gray;z-index:3;
+}
+/*
+#debug{
+  position:absolute;top:20px;left:20px;right:20px;background:white;color:blue;
+  box-sizing:border-box;padding:20px;min-height:100px;display:flex;flex-flow:row wrap;
+  z-index:1000;
+}
+*/
+.mapTile{
+  display:block;position:relative;width:var(--tile);height:var(--tile);z-index:1;box-sizing:border-box;
+}
+.tile0{
+  background-color:green;
+}
+.tile1{
+  background-color:gray;
 }

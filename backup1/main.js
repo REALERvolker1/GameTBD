@@ -3,9 +3,9 @@ const scoreboard = document.getElementById("scoreboard")
 
 const maxDim = 800
 var controlLeft = 37, controlUp = 38, controlRight = 39, controlDown = 40
-var playerMoveUnit = 100
+var playerMoveUnit = 20
 
-var x = 0, y = 0
+var x = 350, y = 350
 player.style.left = x + "px"
 player.style.top = y + "px"
 
