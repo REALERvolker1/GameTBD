@@ -17,3 +17,6 @@ main{
 .player{
   background-color:white;border:3px solid gray;
 }
+.enemy{
+  background-color:var(--red);border:3px solid gray;
+}
