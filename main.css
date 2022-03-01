@@ -4,6 +4,7 @@
   --tile:50px;
   background:black;
   color:white;
+  font-family:'Courier New', Courier, monospace
 }
 /* Map: z index 1
 Entity: z index 2
@@ -13,10 +14,6 @@ Player: z index 5
 main{
   width:800px;height:800px;position:fixed;display:flex;top:5px;left:5px;
   border:2px solid white;background-color:black;flex-flow:row wrap;}
-.rightPane{
-  float:right;background:white;width:200px;height:100%;color:black;
-  text-align:center;
-}
 .tile{
   height:var(--tile);width:var(--tile);display:block;position:absolute;
 }
@@ -49,4 +46,19 @@ main{
 .tile2{
   background:url(assets/textures/polished_blackstone.png) no-repeat;
   background-size:cover;
+}
+.tileS{
+  background:var(--red);
+}
+.tileG{
+  background:var(--blue);
+}
+#window{
+  display:none;position:relative;z-index:10;width:400px;background:#000a;text-align:center;box-sizing:border-box;padding:20px;
+}
+#ui{
+  position:fixed;right:10px;top:10px;text-align:right;
+}
+.large-num-display{
+  font-size:2rem;text-align:center;font-weight: 900;
 }

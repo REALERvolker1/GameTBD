@@ -7,11 +7,14 @@
   <link rel="stylesheet" type="text/css" href="main.css">
   <title>Name TBD</title>
 </head>
-<body onkeyup="keyEvent(event)">
-  <main id="main">
-  </main>
-  <div class="rightPane">
-    <p id="scoreboard">scor</p>
+<body onkeydown="keyEvent(event)">
+  <main id="main"></main>
+  <div id="window"></div>
+  <div id="ui">
+    Time you have wasted:
+    <p id="timer" class="large-num-display">0</p>
+    Keystrokes you have wasted:
+    <p id="keystrokes" class="large-num-display">0</p>
   </div>
 <script src="scr.js"></script>
 </body>
